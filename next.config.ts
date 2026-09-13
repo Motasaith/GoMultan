@@ -11,3 +11,7 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
+// Lets `next dev` use Cloudflare bindings (R2, images, env vars) locally.
+import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
+initOpenNextCloudflareForDev();
